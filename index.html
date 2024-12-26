@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Pakaian Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="c:\Users\HP\Downloads\PSJPFC (1).png" alt="WzRd20">
+            </div>
+            <ul>
+                <li><a href="#beranda">Beranda</a></a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#keranjang">🛒 Keranjang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Selamat Datang di Store Kami</h1>
+        <p>Temukan koleksi pakaian terbaru kami</p>
+    </section>
+
+    <!-- Produk -->
+    <section id="produk" class="produk-container">
+        <h2>Produk Terbaru</h2>
+        <div class="produk-grid">
+            <div class="produk-card">
+                <img src="c:\Users\HP\Downloads\kemeja-removebg-preview.png" alt="Pakaian 1">
+                <h3>Kemeja Casual</h3>
+                <p>Rp 199.000</p>
+                <button>Tambah ke Keranjang</button>
+            </div>
+            <div class="produk-card">
+                <img src="c:\Users\HP\Downloads\jeans SI.jpg" alt="Pakaian 2">
+                <h3>Celana Jeans</h3>
+                <p>Rp 299.000</p>
+                <button>Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="tentang">
+        <h2>Tentang Kami</h2>
+        <div class="tentang-content">
+            <p>Fashion Store adalah toko pakaian online yang menyediakan berbagai koleksi pakaian berkualitas dengan harga terjangkau. Kami berkomitmen untuk memberikan pengalaman berbelanja yang terbaik bagi pelanggan kami.</p>
+            <p>Visi kami adalah menjadi destinasi utama belanja fashion online yang terpercaya dan memberikan kepuasan maksimal kepada pelanggan melalui produk berkualitas dan layanan prima.</p>
+        </div>
+    </section>
+
+
+
+    <!-- Kontak -->
+    <section id="kontak" class="kontak">
+        <h2>Hubungi Kami</h2>
+        <div class="kontak-content">
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                </div>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+            <div class="kontak-info">
+                <h3>Informasi Kontak</h3>
+                <p>📍 Jl. . 123, Jakarta</p>
+                <p>📞 +62 123 456 789</p>
+                <p>✉️ info@WzRd20.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fashion Store. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Sebelum tag </body> -->
+    <div id="keranjangModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div id="keranjang-items">
+                <!-- Item keranjang akan ditampilkan di sini -->
+            </div>
+            <div id="total-harga">Total: Rp 0</div>
+            <button id="checkout-btn" class="checkout-button">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
